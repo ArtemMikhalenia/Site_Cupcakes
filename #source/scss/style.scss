@@ -31,12 +31,9 @@ $md4: 479.98;
 @import "null.scss";
 
 body {
+	height: 100%;
 	color: #000;
 	font-size: 14px;
-
-	&.lock {
-		overflow: hidden;
-	}
 }
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -44,7 +41,7 @@ body {
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
 	width: 100%;
-	min-height: 100%;
+	min-height: 100vh;
 	overflow: hidden;
 
 	&.loaded {}
@@ -72,8 +69,312 @@ body {
 @import "footer.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
-//<ОСНОВНОЙ БЛОК>====================================================================================================
+//<MAINBLOCK>====================================================================================================
 
-//====================================================================================================
+.mainblock {
+	position: relative;
+	padding: 307px 0px 465px 0px;
 
-//</ОСНОВНОЙ БЛОК>====================================================================================================
+	@media (max-width: $md3+px) {
+		padding: 200px 0px 200px 0px;
+	}
+
+	&__background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -2;
+	}
+
+	&__images {}
+
+	&__image {}
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	&__content {
+		max-width: 650px;
+		margin: 0px 10px;
+	}
+
+	&__category {
+		display: inline-block;
+		padding: 10px 18px;
+		border-radius: 5px;
+		font-size: 11px;
+		line-height: 17px;
+		letter-spacing: 0.1em;
+		text-align: left;
+		color: #2E363E;
+		background-color: #F2F6FA;
+		text-transform: uppercase;
+		margin: 0px 0px 24px 0px;
+	}
+
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 60px;
+		letter-spacing: -1px;
+		text-align: left;
+		color: #FFFFFF;
+		margin: 0px 0px 24px 0px;
+
+		@media (max-width: $md3+px) {
+			font-size: 40px;
+			line-height: 50px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 34px;
+		letter-spacing: 0em;
+		color: #FFFFFF;
+		margin: 0px 0px 40px 0px;
+
+		@media (max-width: $md4+px) {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: $md4+px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.mainblock-berryleft {
+	position: absolute;
+	z-index: -1;
+	display: inline-block;
+	height: 201px;
+	width: 196px;
+	top: 20%;
+	left: -3%;
+	transform: rotate(-45deg);
+
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: $md3+px) {
+		height: calc(201px / 1.5);
+		width: calc(196px / 1.5);
+	}
+}
+
+.mainblock-leafleft {
+	position: absolute;
+	z-index: -1;
+	display: inline-block;
+	height: 286px;
+	width: 275px;
+	bottom: 0;
+	left: 0;
+
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: $md3+px) {
+		bottom: 20px;
+		height: calc(286px / 1.5);
+		width: calc(275px / 1.5);
+	}
+}
+
+.mainblock-berryright {
+	position: absolute;
+	display: inline-block;
+	height: 175px;
+	width: 170px;
+	top: 9%;
+	right: -2%;
+	z-index: -1;
+	transform: rotate(28deg);
+
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: $md3+px) {
+		height: calc(175px / 1.5);
+		width: calc(170px / 1.5);
+	}
+}
+
+.mainblock-berryrightbottom {
+	position: absolute;
+	display: inline-block;
+	height: 201px;
+	width: 196px;
+	bottom: 13%;
+	right: 11%;
+	z-index: -1;
+	transform: rotate(-150deg);
+
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: $md3+px) {
+		height: calc(201px / 1.5);
+		width: calc(196px / 1.5);
+	}
+}
+
+.footer-mainblock {
+
+	&__button {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 27px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #2E363E;
+		padding: 30px 50px;
+		background-color: #FED84C;
+		border-radius: 8px;
+		margin: 0px 20px 0px 0px;
+		transition: all 0.3s ease 0s;
+
+		@media (max-width: $md3+px) {
+			padding: 18px 38px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 10px 0px;
+		}
+
+		@media (min-width: $md3+px) {
+			&:hover {
+				background-color: #FFFFFF;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #FFFFFF;
+		max-width: 150px;
+
+		@media (max-width: $md3+px) {
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 5px 5px;
+			border-radius: 8px;
+		}
+
+		@media (max-width: $md4+px) {
+			max-width: 100%;
+		}
+	}
+}
+
+//</MAINBLOCK>====================================================================================================
+//<SHOP>====================================================================================================
+
+.shop {
+
+	&__images {}
+
+	&__image {}
+
+	&__container {}
+
+	&__body {}
+
+	&__title {
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 60px;
+		letter-spacing: -1px;
+		text-align: center;
+		color: #2E363E;
+		margin: 0px 0px 80px 0px;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		gap: 20px;
+	}
+
+	&__item {}
+}
+
+.shop- {}
+
+.item-shop {
+
+	&__image {
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__content {
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 34px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #2E363E;
+		margin: 0px 0px 12px 0px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #2E363E;
+		margin: 0px 0px 24px 0px;
+	}
+
+	&__price {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 36px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #434B53;
+		margin: 0px 0px 14px 0px;
+	}
+
+	&__button {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 27px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #2E363E;
+		padding: 20px 40px;
+		background-color: #FED84C;
+		border-radius: 8px;
+	}
+}
+
+
+//</SHOP>====================================================================================================
