@@ -34,6 +34,7 @@ body {
 	height: 100%;
 	color: #000;
 	font-size: 14px;
+	background: #FFFFFF;
 }
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -185,7 +186,7 @@ body {
 	display: inline-block;
 	height: 286px;
 	width: 275px;
-	bottom: 0;
+	bottom: 80px;
 	left: 0;
 
 	img {
@@ -293,14 +294,22 @@ body {
 //<SHOP>====================================================================================================
 
 .shop {
+	margin: -2px 0px 0px 0px;
+	position: relative;
+	background-color: #FFFFFF;
 
 	&__images {}
 
 	&__image {}
 
-	&__container {}
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 
-	&__body {}
+	&__body {
+		margin: 0px 10px;
+	}
 
 	&__title {
 		font-size: 48px;
@@ -322,16 +331,71 @@ body {
 	&__item {}
 }
 
-.shop- {}
+.shop-raspberry {
+	position: absolute;
+	width: 190px;
+	height: 194px;
+	top: 0;
+	left: 0;
 
-.item-shop {
-
-	&__image {
-		margin: 0px 0px 50px 0px;
+	img {
+		width: 100%;
 	}
 
+	// @media (max-width: $md3+px) {
+	// 	height: calc(201px / 1.5);
+	// 	width: calc(196px / 1.5);
+	// }
+}
+
+.shop-leafleft {
+	position: absolute;
+	width: 113px;
+	height: 109px;
+	top: 0;
+	left: 0;
+
+	img {
+		width: 100%;
+	}
+
+	// @media (max-width: $md3+px) {
+	// 	height: calc(201px / 1.5);
+	// 	width: calc(196px / 1.5);
+	// }
+}
+
+.shop-leafright {
+	position: absolute;
+	width: 161px;
+	height: 167px;
+	top: 0;
+	left: 0;
+
+	img {
+		width: 100%;
+	}
+
+	// @media (max-width: $md3+px) {
+	// 	height: calc(201px / 1.5);
+	// 	width: calc(196px / 1.5);
+	// }
+}
+
+.item-shop {
+	max-width: 380px;
+	border: 1px solid rgba(242, 246, 250, 1);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+
+	&__image {}
+
 	&__content {
-		margin: 0px 0px 50px 0px;
+		display: flex;
+		flex-direction: column;
+		margin: 50px 44px;
+		flex: 1 1 100%;
 	}
 
 	&__title {
@@ -351,6 +415,7 @@ body {
 		text-align: left;
 		color: #2E363E;
 		margin: 0px 0px 24px 0px;
+		flex: 1 1 100%;
 	}
 
 	&__price {
@@ -364,6 +429,7 @@ body {
 	}
 
 	&__button {
+		display: inline-block;
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 27px;
@@ -373,6 +439,7 @@ body {
 		padding: 20px 40px;
 		background-color: #FED84C;
 		border-radius: 8px;
+		width: 163px;
 	}
 }
 

@@ -94,6 +94,7 @@ body {
   height: 100%;
   color: #000;
   font-size: 14px;
+  background: #FFFFFF;
 }
 
 .wrapper {
@@ -394,7 +395,7 @@ body.ie .ibg img {
   display: inline-block;
   height: 286px;
   width: 275px;
-  bottom: 0;
+  bottom: 80px;
   left: 0;
 }
 .mainblock-leafleft img {
@@ -500,6 +501,18 @@ body.ie .ibg img {
   }
 }
 
+.shop {
+  margin: -2px 0px 0px 0px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+.shop__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.shop__body {
+  margin: 0px 10px;
+}
 .shop__title {
   font-size: 48px;
   font-weight: 500;
@@ -517,11 +530,63 @@ body.ie .ibg img {
   justify-items: center;
   gap: 20px;
 }
-.item-shop__image {
-  margin: 0px 0px 50px 0px;
+.shop-raspberry {
+  position: absolute;
+  width: 190px;
+  height: 194px;
+  top: 0;
+  left: 0;
+}
+.shop-raspberry img {
+  width: 100%;
+}
+
+.shop-leafleft {
+  position: absolute;
+  width: 113px;
+  height: 109px;
+  top: 0;
+  left: 0;
+}
+.shop-leafleft img {
+  width: 100%;
+}
+
+.shop-leafright {
+  position: absolute;
+  width: 161px;
+  height: 167px;
+  top: 0;
+  left: 0;
+}
+.shop-leafright img {
+  width: 100%;
+}
+
+.item-shop {
+  max-width: 380px;
+  border: 1px solid rgb(242, 246, 250);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .item-shop__content {
-  margin: 0px 0px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 44px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 .item-shop__title {
   font-size: 24px;
@@ -539,6 +604,9 @@ body.ie .ibg img {
   text-align: left;
   color: #2E363E;
   margin: 0px 0px 24px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 .item-shop__price {
   font-size: 24px;
@@ -550,6 +618,7 @@ body.ie .ibg img {
   margin: 0px 0px 14px 0px;
 }
 .item-shop__button {
+  display: inline-block;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -559,4 +628,5 @@ body.ie .ibg img {
   padding: 20px 40px;
   background-color: #FED84C;
   border-radius: 8px;
+  width: 163px;
 }
