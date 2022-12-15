@@ -575,6 +575,9 @@ body.ie .ibg img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.item-shop__image img {
+  max-width: 100%;
+}
 .item-shop__content {
   display: -webkit-box;
   display: -ms-flexbox;
