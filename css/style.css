@@ -759,27 +759,18 @@ body.ie .ibg img {
   position: relative;
   background-color: rgb(8, 17, 48);
 }
-.create__background {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 .create__leaf {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 10%;
   left: 0;
 }
 .create__berry {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 10%;
   left: 0;
 }
 .create__container {
@@ -793,17 +784,25 @@ body.ie .ibg img {
   margin: 0 auto;
 }
 .create__image {
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: absolute;
-  width: 100%;
+  max-width: 1090px;
+  max-height: 1034px;
   left: 0;
   bottom: 0;
+}
+.create__image img {
+  width: 100%;
 }
 .create__content {
   padding: 439px 0px 459px 0px;
   width: 481px;
+  z-index: 3;
 }
 .create__category {
+  display: inline-block;
   font-size: 11px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -813,6 +812,7 @@ body.ie .ibg img {
   padding: 10px 18px;
   background-color: #F2F6FA;
   border-radius: 5px;
+  margin: 0px 0px 24px 0px;
 }
 .create__title {
   font-size: 48px;
@@ -821,6 +821,7 @@ body.ie .ibg img {
   letter-spacing: -1px;
   text-align: left;
   color: #FFFFFF;
+  margin: 0px 0px 24px 0px;
 }
 .create__text {
   font-size: 21px;
@@ -828,11 +829,34 @@ body.ie .ibg img {
   letter-spacing: -0.200000003px;
   text-align: left;
   color: #FFFFFF;
+  margin: 0px 0px 40px 0px;
 }
+.create__button {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2E363E;
+  padding: 30px 50px;
+  border-radius: 8px;
+  background-color: #FED84C;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+@media (min-width: 767.98px) {
+  .create__button:hover {
+    background-color: #FFFFFF;
+  }
+}
+
 .bg-create__top {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: -1px;
   left: 0;
 }
 .bg-create__top img {
@@ -847,4 +871,14 @@ body.ie .ibg img {
 }
 .bg-create__bottom img {
   width: 100%;
+}
+
+.file__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
 }
