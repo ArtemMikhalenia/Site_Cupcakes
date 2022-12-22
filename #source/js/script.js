@@ -1,15 +1,3 @@
-
-let iconMenu = document.querySelector(".icon-menu");
-let body = document.querySelector("body");
-let menuBody = document.querySelector(".menu__body");
-if (iconMenu) {
-	iconMenu.addEventListener("click", function () {
-		iconMenu.classList.toggle("active");
-		body.classList.toggle("lock");
-		menuBody.classList.toggle("active");
-	});
-}
-
 //ibg
 function ibg() {
 	let ibg = document.querySelectorAll(".ibg");
@@ -20,3 +8,23 @@ function ibg() {
 	}
 }
 ibg();
+
+//swiper
+const swiper = new Swiper('.swiper', {
+	effect: 'coverflow',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	loop: true,
+	autoHeight: true,
+	coverflowEffect: {
+		rotate: 0,
+		depth: 200,
+		slideShadows: true,
+	},
+	navigation: {
+		disabledClass: 'swiper-button-disabled',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
