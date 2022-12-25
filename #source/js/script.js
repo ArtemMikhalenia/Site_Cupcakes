@@ -16,11 +16,13 @@ const swiper = new Swiper('.swiper', {
 	centeredSlides: true,
 	slidesPerView: 'auto',
 	loop: true,
+	spaceBetween: 180,
 	autoHeight: true,
 	coverflowEffect: {
 		rotate: 0,
 		depth: 200,
-		slideShadows: true,
+		shadow: true,
+		slideShadows: true
 	},
 	navigation: {
 		disabledClass: 'swiper-button-disabled',
