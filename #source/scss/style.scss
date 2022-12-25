@@ -1022,13 +1022,15 @@ body {
 .reviews {
 	position: relative;
 	background-color: rgba(8, 17, 48, 1);
+	z-index: 0;
 
 	&__container {
+		position: relative;
 		margin: 0 auto;
 	}
 
 	&__content {
-		padding: 330px 0px 308px 0px;
+		padding: 330px 5px 308px 5px;
 	}
 
 	&__background {
@@ -1076,10 +1078,9 @@ body {
 	&__leaf {
 		position: absolute;
 		width: 100%;
-		height: 100%;
 		top: 20%;
 		left: 10%;
-		z-index: 0;
+		z-index: -1;
 	}
 }
 
@@ -1092,6 +1093,7 @@ body {
 		height: 100%;
 		top: -7%;
 		right: -75%;
+		z-index: 2;
 	}
 }
 
@@ -1101,15 +1103,29 @@ body {
 	background-color: #FFFFFF;
 	border-radius: 5px;
 	max-width: 1180px;
-	border: none;
-
 
 	&__content {
 		margin: 70px 143px;
+
+		@media (max-width: $md1+px) {
+			margin: 45px 72px;
+		}
+
+		@media (max-width: $md2+px) {
+			margin: 20px 30px;
+		}
+
+		@media (max-width: 600px) {
+			margin: 10px 10px;
+		}
 	}
 
 	&__columns {
 		display: flex;
+
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
 	}
 
 	&__column {
@@ -1188,8 +1204,8 @@ body {
 	display: none;
 }
 
-.swiper-button-prev:before,
-.swiper-button-prev:after {
+div.swiper-button-prev:before,
+div.swiper-button-prev:after {
 	content: '';
 	position: absolute;
 	top: 0;
