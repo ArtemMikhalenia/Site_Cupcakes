@@ -29,3 +29,37 @@ const swiper = new Swiper('.swiper', {
 		prevEl: '.slider-prev',
 	},
 });
+
+//spoiler
+let btns = document.querySelectorAll('.butn');
+
+for (butn of btns) {
+	butn.addEventListener('click', function () {
+		let text = this.closest('.swiper-column__text');
+		let more = text.querySelector('.more');
+
+		if (more.style.display === 'none') {
+			more.style.display = 'none';
+		} else {
+			more.style.display = 'inline';
+		}
+	});
+}
+// const textMore = document.querySelector('.more');
+
+// btns.addEventListener('click', function () {
+// 	textMore.classList.toggle('showTexts');
+// });
+
+// console.log(textMore);
+// btns.forEach(listItem => {
+// 	listItem.addEventListener('click', function () {
+// 		text.classList.add('active');
+// 	})
+// })
+
+// (btn of btns) {
+// 	btn.addEventlistener('click', function () {
+// 			let more = document.querySelector('.more');
+// 		})
+// }
