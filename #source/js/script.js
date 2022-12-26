@@ -25,8 +25,7 @@ const swiper = new Swiper('.swiper', {
 		slideShadows: true
 	},
 	navigation: {
-		disabledClass: 'swiper-button-disabled',
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.slider-next',
+		prevEl: '.slider-prev',
 	},
 });
