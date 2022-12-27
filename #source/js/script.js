@@ -30,36 +30,23 @@ const swiper = new Swiper('.swiper', {
 	},
 });
 
-//spoiler
-let btns = document.querySelectorAll('.butn');
+//spoiler for big text
+let btns = document.querySelectorAll('.btn');
 
-for (butn of btns) {
-	butn.addEventListener('click', function () {
+for (btn of btns) {
+	btn.addEventListener('click', function () {
 		let text = this.closest('.swiper-column__text');
+		let dots = text.querySelector('.dots');
 		let more = text.querySelector('.more');
 
-		if (more.style.display === 'none') {
+		if (dots.style.display === 'none') {
+			dots.style.display = 'inline';
 			more.style.display = 'none';
+			this.textContent = 'Читать отзыв полностью';
 		} else {
+			dots.style.display = 'none';
 			more.style.display = 'inline';
+			this.textContent = 'Скрыть';
 		}
 	});
 }
-// const textMore = document.querySelector('.more');
-
-// btns.addEventListener('click', function () {
-// 	textMore.classList.toggle('showTexts');
-// });
-
-// console.log(textMore);
-// btns.forEach(listItem => {
-// 	listItem.addEventListener('click', function () {
-// 		text.classList.add('active');
-// 	})
-// })
-
-// (btn of btns) {
-// 	btn.addEventlistener('click', function () {
-// 			let more = document.querySelector('.more');
-// 		})
-// }
