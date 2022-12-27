@@ -89,10 +89,6 @@ body {
 		z-index: -2;
 	}
 
-	&__images {}
-
-	&__image {}
-
 	&__container {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -294,12 +290,12 @@ body {
 //<SHOP>====================================================================================================
 
 .shop {
-	margin: -2px 0px 0px 0px;
+	margin: -3px 0px 30px 0px;
 	background-color: #FFFFFF;
 
-	&__images {}
-
-	&__image {}
+	@media (min-width: 1920px) {
+		padding: 200px 0px 0px 0px;
+	}
 
 	&__container {
 		position: relative;
@@ -346,8 +342,6 @@ body {
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
-
-	&__item {}
 }
 
 .shop-raspberry {
@@ -536,6 +530,7 @@ body {
 .create {
 	position: relative;
 	background-color: rgba(8, 17, 48, 1);
+	margin: -4px 0px 0px 0px;
 
 	&__leaf {
 		position: absolute;
@@ -696,12 +691,14 @@ body {
 }
 
 .bg-create {
+	width: 100%;
 
 	&__top {
 		position: absolute;
 		width: 100%;
-		top: -1px;
+		top: -2px;
 		left: 0;
+
 
 		img {
 			width: 100%;
@@ -1072,7 +1069,7 @@ body {
 	&__top {
 		position: absolute;
 		width: 100%;
-		top: -2px;
+		top: -3px;
 		left: 0;
 
 		img {
@@ -1135,14 +1132,14 @@ div.swiper-slide-active .swiper-slide-visible {
 	}
 }
 
-.swiper-wrapper {}
-
 .swiper-slide {
 	background-color: #FFFFFF;
 	border-radius: 5px;
 	max-width: 1180px;
 
 	&__content {
+		display: flex;
+		
 		margin: 70px 143px;
 
 		@media (max-width: $md1+px) {
@@ -1191,6 +1188,9 @@ div.swiper-slide-active .swiper-slide-visible {
 .swiper-column {
 
 	&__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 100%;
 		margin: 0px 54px 0px 0px;
 
 		@media (max-width: $md3+px) {
@@ -1213,16 +1213,27 @@ div.swiper-slide-active .swiper-slide-visible {
 	}
 
 	&__text {
+		flex: 1 1 100%;
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 26px;
 		letter-spacing: 0em;
 		text-align: left;
 		color: #2E363E;
-		margin: 0px 0px 24px 0px;
+
+		p {
+			margin: 0px 0px 24px 0px;
+		}
 	}
 
-	&__button {}
+	&__button {
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0px;
+		background: none;
+		color: rgba(74, 148, 255, 1);
+		border-bottom: 1px dashed #4A94FF;
+	}
 
 	&__image {
 		margin: 0px 0px 30px 0px;
