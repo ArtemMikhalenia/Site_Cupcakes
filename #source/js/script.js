@@ -49,4 +49,9 @@ for (btn of btns) {
 			this.textContent = 'Скрыть';
 		}
 	});
+
+	//baguette
+	window.addEventListener('load', function () {
+		baguetteBox.run('.orders__images');
+	});
 }

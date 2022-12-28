@@ -279,6 +279,58 @@ body.ie .ibg img {
   color: #FFFFFF;
 }
 
+.footer {
+  background-color: rgb(8, 17, 48);
+}
+.footer__body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer__background {
+  margin: -9px 0px 0px 0px;
+}
+.footer__background img {
+  width: 100%;
+}
+.footer__content {
+  margin: 0px 10px 80px;
+  padding: 70px 0px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.footer__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0px 0px 12px 0px;
+}
+.footer__text {
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: -0.200000003px;
+  text-align: center;
+  color: #2E363E;
+  margin: 0px 0px 36px 0px;
+}
 .mainblock {
   position: relative;
   padding: 307px 0px 465px 0px;
@@ -1614,6 +1666,9 @@ div.swiper-3d .swiper-slide-shadow-right {
   right: 0;
 }
 
+.orders {
+  margin: 0px 0px 10px 0px;
+}
 .orders__title {
   font-size: 48px;
   font-weight: 500;
