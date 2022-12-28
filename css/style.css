@@ -331,6 +331,133 @@ body.ie .ibg img {
   color: #2E363E;
   margin: 0px 0px 36px 0px;
 }
+.form-footer__field {
+  max-width: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 5px 24px;
+}
+.form-footer__data {
+  margin: 0px 5px;
+}
+
+.phonenumber__input {
+  width: 380px;
+  background-color: #F2F6FA;
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 32px 190px 29px 31.5px;
+  margin: 0px 20px 0px 0px;
+}
+
+.phonenumber__input::-webkit-input-placeholder {
+  padding: 0px 0px 0px 26.5px;
+  background: url("../img/footer/icon.png") left center no-repeat;
+}
+
+.phonenumber__input::-moz-placeholder {
+  padding: 0px 0px 0px 26.5px;
+  background: url("../img/footer/icon.png") left center no-repeat;
+}
+
+.phonenumber__input:-ms-input-placeholder {
+  padding: 0px 0px 0px 26.5px;
+  background: url("../img/footer/icon.png") left center no-repeat;
+}
+
+.phonenumber__input::-ms-input-placeholder {
+  padding: 0px 0px 0px 26.5px;
+  background: url("../img/footer/icon.png") left center no-repeat;
+}
+
+.phonenumber__input::placeholder {
+  padding: 0px 0px 0px 26.5px;
+  background: url("../img/footer/icon.png") left center no-repeat;
+}
+
+.formbutton {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 29px 123.5px;
+  border-radius: 8px;
+  background-color: #FED84C;
+}
+
+.checkbox__label {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7E868E;
+}
+.checkbox__label a {
+  color: #7E868E;
+  text-decoration: underline;
+}
+.checkbox__label a:hover {
+  text-decoration: none;
+}
+
+.bottom-footer {
+  padding: 0px 0px 80px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 605px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #7E868E;
+}
+.bottom-footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 22px 0px;
+}
+.bottom-footer__top a {
+  color: #7E868E;
+  margin: 0px 20px 0px 0px;
+}
+.bottom-footer__top a:hover {
+  text-decoration: underline;
+}
+.bottom-footer__top a:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.bottom-footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mainblock {
   position: relative;
   padding: 307px 0px 465px 0px;
