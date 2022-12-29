@@ -55,3 +55,16 @@ for (btn of btns) {
 		baguetteBox.run('.orders__images');
 	});
 }
+
+//placeholder для одного
+let form = document.forms.phone;
+let placeholder = document.querySelector('[placeholder]');
+let phoneInput = form.phonenumber;
+let phonePlaceholder = phoneInput.placeholder;
+
+placeholder.addEventListener("focus", function (e) {
+	phoneInput.placeholder = "";
+});
+placeholder.addEventListener("blur", function (e) {
+	phoneInput.placeholder = phonePlaceholder;
+});
