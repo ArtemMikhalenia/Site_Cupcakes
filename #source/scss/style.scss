@@ -1138,8 +1138,6 @@ div.swiper-slide-active .swiper-slide-visible {
 	max-width: 1180px;
 
 	&__content {
-		display: flex;
-
 		margin: 70px 143px;
 
 		@media (max-width: $md1+px) {
@@ -1157,7 +1155,7 @@ div.swiper-slide-active .swiper-slide-visible {
 
 	&__columns {
 		display: flex;
-		flex: 1 1 100%;
+		flex: 0 1 100%;
 
 		@media (max-width: $md3+px) {
 			flex-direction: column;
