@@ -53,3 +53,212 @@ body.ie {
 		visibility: hidden;
 	}
 }
+
+//<SCROLL ANIMATION>==================================================================================================
+
+//<FROM BOTTOM TO TOP>===============================
+.shop__title,
+.item-shop__title,
+.item-shop__text,
+.item-shop__price,
+.shop-button,
+.cook-confectioner__name,
+.cook-confectioner__label,
+.reviews__title,
+.orders__title,
+.orders__text,
+.footer__title,
+.footer__text,
+.footer__form {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.shop__title.active,
+.item-shop__title.active,
+.item-shop__text.active,
+.item-shop__price.active,
+.shop-button.active,
+.cook-confectioner__name.active,
+.cook-confectioner__label.active,
+.reviews__title.active,
+.orders__title.active,
+.orders__text.active,
+.footer__title.active,
+.footer__text.active,
+.footer__form.active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.orders__text {
+	transition: all 1s ease 0.2s;
+}
+
+.item-shop__title,
+.footer__title {
+	transition: all 1s ease 0.4s;
+}
+
+.item-shop__text,
+.cook-confectioner__name,
+.footer__text {
+	transition: all 1s ease 0.6s;
+}
+
+.item-shop__price,
+.cook-confectioner__label,
+.footer__form {
+	transition: all 1s ease 0.8s;
+}
+
+.shop-button {
+	transition: all 1s ease 0.8s;
+}
+
+//<SCALE>===============================
+.shop__item,
+.confectioner__images,
+.image0,
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.footer__content {
+	transform: scale(0);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.shop__item.active,
+.confectioner__images.active,
+.image0.active,
+.image1.active,
+.image2.active,
+.image3.active,
+.image4.active,
+.image5.active,
+.image6.active,
+.image7.active,
+.image8.active,
+.footer__content.active {
+	transform: scale(1);
+	opacity: 1;
+}
+
+@media (min-width: $md3+px) {
+
+	.image1,
+	.image4,
+	.image7 {
+		transition: all 1s ease 0.1s;
+	}
+
+	.image2,
+	.image5,
+	.image8 {
+		transition: all 1s ease 0.2s;
+	}
+}
+
+//<FROM TOP TO BOTTOM>===============================
+.header,
+.bottom-footer__top,
+.bottom-footer__bottom {
+	transform: translate(0px, -50px);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.header.active,
+.bottom-footer__top.active,
+.bottom-footer__bottom.active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.bottom-footer__bottom {
+	transition: all 1s ease 0.2s;
+}
+
+//<FROM LEFT TO RIGHT>===============================
+.mainblock__category,
+.mainblock__title,
+.mainblock__text,
+.button-animation,
+.create__category,
+.create__title,
+.create__text,
+.button-anim,
+.confectioner__category,
+.confectioner__title,
+.list1,
+.list2,
+.list3,
+.confectioner-button {
+	transform: translate(-120%, 0px);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.mainblock__category.active,
+.mainblock__title.active,
+.mainblock__text.active,
+.button-animation.active,
+.create__category.active,
+.create__title.active,
+.create__text.active,
+.button-anim.active,
+.confectioner__category.active,
+.confectioner__title.active,
+.list1.active,
+.list2.active,
+.list3.active,
+.confectioner-button.active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.mainblock__title,
+.create__title,
+.confectioner__title {
+	transition: all 1s ease 0.2s;
+}
+
+.mainblock__text,
+.create__text,
+.list1 {
+	transition: all 1s ease 0.4s;
+}
+
+.button-animation,
+.button-anim,
+.list2 {
+	transition: all 1s ease 0.6s;
+}
+
+.list3 {
+	transition: all 1s ease 0.8s;
+}
+
+.confectioner-button {
+	transition: all 1s ease 1s;
+}
+
+//<FROM RIGHT TO LEFT>===============================
+
+.footer-mainblock__text {
+	transform: translate(120%, 0px);
+	opacity: 0;
+	transition: all 1s ease 0.6s;
+}
+
+.footer-mainblock__text.active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}

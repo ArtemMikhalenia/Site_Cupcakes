@@ -239,10 +239,10 @@ body {
 .footer-mainblock {
 
 	&__button {
+		display: block;
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 27px;
-		letter-spacing: 0em;
 		text-align: center;
 		color: #2E363E;
 		padding: 30px 50px;
@@ -350,6 +350,7 @@ body {
 	height: 194px;
 	top: 13.5%;
 	left: -9%;
+	z-index: 1;
 
 	img {
 		width: 100%;
@@ -380,6 +381,7 @@ body {
 	height: 129px;
 	top: 72%;
 	left: -9%;
+	z-index: 1;
 
 	img {
 		width: 100%;
@@ -413,6 +415,7 @@ body {
 	height: 167px;
 	top: 53%;
 	right: -9%;
+	z-index: 1;
 
 	img {
 		width: 100%;
